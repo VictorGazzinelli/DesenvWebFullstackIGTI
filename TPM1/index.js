@@ -2,28 +2,28 @@ var redValue = 0;
 var greenValue = 0;
 var blueValue = 0;
 
-window.addEventListener("load", onPageLoad())
+// window.addEventListener("load", onPageLoad())
 
-function onPageLoad(){
-    inputRangePickerRed = document.getElementById('redRangePickerValue')
-    inputRangePickerGreen = document.getElementById('greenRangePicker')
-    inputRangePickerBlue = document.getElementById('blueRangePicker')
-    // inputRangePickerRed.addEventListener("keypress", onArrowPress(event , inputRangePickerRed))
-    // inputRangePickerGreen.addEventListener("keypress", onArrowPress(event, inputRangePickerGreen))
-    // inputRangePickerBlue.addEventListener("keypress", onArrowPress(event, inputRangePickerBlue))
-}
+// function onPageLoad(){
+//     inputRangePickerRed = document.getElementById('redRangePickerValue')
+//     inputRangePickerGreen = document.getElementById('greenRangePicker')
+//     inputRangePickerBlue = document.getElementById('blueRangePicker')
+//     // inputRangePickerRed.addEventListener("keypress", onArrowPress(event , inputRangePickerRed))
+//     // inputRangePickerGreen.addEventListener("keypress", onArrowPress(event, inputRangePickerGreen))
+//     // inputRangePickerBlue.addEventListener("keypress", onArrowPress(event, inputRangePickerBlue))
+// }
 
-function onArrowPress(event, inputElement){
-    switch(event.keyCode){
-        case 37:
-            inputElement.value = (+(inputElement.value) - 1).toString()
-            break;
-        case 39:
-            inputElement.value = (+(inputElement.value) + 1).toString()
-        default:
-            break;
-    }
-}
+// function onArrowPress(event, inputElement){
+//     switch(event.keyCode){
+//         case 37:
+//             inputElement.value = (+(inputElement.value) - 1).toString()
+//             break;
+//         case 39:
+//             inputElement.value = (+(inputElement.value) + 1).toString()
+//         default:
+//             break;
+//     }
+// }
 
 function onRangePickerChange(value, idInput){
     document.getElementById(idInput).value = value;
