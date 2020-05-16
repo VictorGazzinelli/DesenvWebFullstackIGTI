@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu Color Picker</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="rangePickerContainer">
+                <input 
+                    id="redRangePicker"
+                    class="rangePicker"
+                    type="range"
+                    min="0"
+                    max="255"
+                    value="0"
+                    step="1"
+                    onchange="onRangePickerChange(value,'redRangePickerValue')"
+                    oninput="onRangePickerChange(value,'redRangePickerValue')"
+                />
+                <input
+                    id="redRangePickerValue"
+                    type="number"
+                    value="0"
+                    readonly
+                 />
+            </div>
+            <div class="rangePickerContainer">
+                <input
+                    id="greenRangePicker" 
+                    class="rangePicker"
+                    type="range"
+                    min="0"
+                    max="255"
+                    step="1"
+                    value="0"
+                    onchange="onRangePickerChange(value,'greenRangePickerValue')"
+                    oninput="onRangePickerChange(value,'greenRangePickerValue')"
+                />
+                <input
+                    id="greenRangePickerValue"
+                    type="number"
+                    value="0"
+                    readonly
+                 />
+            </div>
+            <div class="rangePickerContainer">
+                <input 
+                    id="blueRangePicker"
+                    class="rangePicker"
+                    type="range"
+                    min="0"
+                    max="255"
+                    step="1"
+                    value="0"
+                    onchange="onRangePickerChange(value,'blueRangePickerValue')"
+                    oninput="onRangePickerChange(value,'blueRangePickerValue')"
+                />
+                <input
+                    id="blueRangePickerValue"
+                    type="number"
+                    value="0"
+                    readonly
+                 />
+            </div>
+            <div 
+                class="colorCanvas"
+                id="IdcolorCanvas"
+            >
+            </div>
+        </div>
+    </body>
+</html>
