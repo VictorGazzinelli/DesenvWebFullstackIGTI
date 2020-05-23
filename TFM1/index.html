@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Victor Gazzinelli">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>Pesquisa de usuários</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header center">Pesquisa de usuários</h1>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s11">
+                      <input
+                        disabled
+                        placeholder="Busca"
+                        id="userNameInput"
+                        type="text"
+                        >
+                      <label id="userNameInputLabel" for="userNameInput">Busca</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <a id="userNameInputSubmit" class="waves-effect waves-light btn disabled">Buscar</a>
+                    </div>
+                  </div>
+                </form>
+            </div>      
+            <div class="row">
+                <div class="col s5 offset-s1 center resultBox">
+                    <div id="userQueryResult">
+                        <h1 id="userQueryResultTitle" class="header center">Nenhum usuário filtrado</h1>
+                        <div id="userQueryResultData"></div>
+                    </div>
+                </div>
+                <div class="col s4 offset-s1 center resultBox">
+                    <div id="userQueryStatistics">
+                        <h1 id="userQueryStatisticsTitle" class="header center">Nada a ser exibido</h1>
+                        <div id="userQueryStatisticsData"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
